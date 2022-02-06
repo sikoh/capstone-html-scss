@@ -1,0 +1,41 @@
+body {
+  background-color: cadetblue;
+}
+
+body .top-wrapper .wpadmin {
+  padding: 0px 7px;
+  height: 30px;
+  background-color: #1d2327;
+  color: #c3c4c7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .top-wrapper .wpadmin .register {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 3%;
+}
+
+body .top-wrapper .wpadmin a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+body .top-wrapper .wpadmin a:hover {
+  color: #06a6f0;
+}
+/*# sourceMappingURL=contact.css.map */

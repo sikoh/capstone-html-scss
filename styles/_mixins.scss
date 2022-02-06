@@ -1,0 +1,16 @@
+@mixin topnav {
+    height: 30px;
+    background-color: #1d2327;
+    color:#c3c4c7;;
+    display: flex;
+    justify-content: space-between;
+    .register{
+        width: 30%;
+        display:flex;
+        justify-content: flex-end;
+        gap: 3%;
+    }
+    a{
+        color: whitesmoke;
+    }
+}

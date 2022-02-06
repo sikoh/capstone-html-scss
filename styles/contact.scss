@@ -1,0 +1,62 @@
+@mixin topnav {
+    padding: 0px 7px;
+    height: 30px;
+    background-color: #1d2327;
+    color:#c3c4c7;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .register{
+        width: 30%;
+        display:flex;
+        justify-content: flex-end;
+        gap: 3%;
+    }
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 14px;
+        &:hover{
+            color: rgb(6, 166, 240);
+        }
+    }
+}
+@mixin navmenu {
+    color: #555;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+    box-shadow: -1px 8px 10px -8px rgba(0,0,0,0.74);
+
+    .pagelinks{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5%;
+        font-family: 'Open Sans',sans-serif;
+        font-size: 70%;
+        
+        .more{
+            padding: 15px 25px;
+            background-color:$a-color;
+            border-radius: 20px;
+            color:whitesmoke;
+
+
+        }
+    }
+
+}
+
+body{
+    background-color: cadetblue;
+    .top-wrapper{
+        .wpadmin{
+            @include topnav
+        }
+    }
+}
