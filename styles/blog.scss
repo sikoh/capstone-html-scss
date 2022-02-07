@@ -1,0 +1,191 @@
+$a-color:#eb2164;
+$text-color: #3c4858;
+$background-gradient: linear-gradient(
+    45deg, rgba(168,29,132,1) 0%, rgb(234,57,111) 100%);
+
+@mixin topnav {
+position: fixed; 
+top: 0; 
+width: 100%;
+padding: 0px 7px;
+height: 30px;
+background-color: #1d2327;
+color:#c3c4c7;;
+display: flex;
+justify-content: space-between;
+align-items: center;
+.register{
+    width: 30%;
+    display:flex;
+    justify-content: flex-end;
+    gap: 3%;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+    &:hover{
+        color: rgb(6, 166, 240);
+    }
+}
+}
+@mixin navmenu {
+position: fixed; 
+top: 15; 
+width: 100%;
+color: #555;
+background-color: #fff;
+display: flex;
+justify-content: space-around;
+height: 70px;
+align-items: center;
+font-family: 'Roboto',Helvetica,Arial,sans-serif;
+box-shadow: -1px 8px 10px -8px rgba(0,0,0,0.74);
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+
+.pagelinks{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5%;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 70%;
+    a:not(.more){
+        &:hover{
+            color:$a-color;
+        }
+        &:active{
+            color:$a-color;
+        }
+    }
+    
+    .more{
+        padding: 15px 15px;
+        background-color:$a-color;
+        border-radius: 20px;
+        color:whitesmoke;
+        &:hover{
+            color:gainsboro;
+            box-shadow: -5px 10px 16px -9px rgba(235,33,100,0.37);
+            -webkit-box-shadow: -5px 10px 16px -9px rgba(235,33,100,0.37);
+            -moz-box-shadow: -5px 10px 16px -9px rgba(235,33,100,0.37);
+            }
+
+
+    }
+}
+
+}
+@mixin linkstyle{
+text-decoration: none;
+color:$a-color;
+&:hover{
+    color:palevioletred;
+}
+}
+
+@mixin footerstyle{
+        background-color: #323437;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding:0% 5%;
+        color: white;
+        align-items: center;
+        font-family: 'Roboto',Helvetica,Arial,sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+
+        .footer{
+            width: 50%; 
+            a{
+                text-decoration: none;
+                color:white;
+                padding-right: 5%;
+            }
+        }
+}
+    
+
+body{
+    margin: 0%;
+    background-color: #e8e8e8;
+    .top-wrapper{
+        .wpadmin{
+            @include topnav
+
+        }
+        .nav-menu{
+            @include navmenu;
+        }
+        .carousel-slide{
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        color: white;
+        padding: 2%;
+        background: $background-gradient;
+        
+        h1{
+            font-size: 50px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+        }
+    }
+    .main-raised{
+        color: $text-color;
+        font-family:'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.8;
+        background-color: white;
+        position: absolute;
+        border-radius: 6px;
+        top: 360px;
+        left: 2%;
+        right: 2%;
+
+        .blog-section {
+            padding:10%;
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            .blog-container1{
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+                    line-height: 1.6;
+                    
+                }
+
+                p{
+                    font-family: Roboto, Helvetica, Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: 100;
+                    line-height: 1.8;
+                }
+                .readmore{
+                    text-decoration: none;
+                    color:#23527c;
+                    &:hover{
+                        color:red}
+                }
+            }
+        }
+        footer{
+            @include footerstyle
+            }
+       
+    }
+
+}

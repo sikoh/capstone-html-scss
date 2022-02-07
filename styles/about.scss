@@ -41,6 +41,10 @@ height: 70px;
 align-items: center;
 font-family: 'Roboto',Helvetica,Arial,sans-serif;
 box-shadow: -1px 8px 10px -8px rgba(0,0,0,0.74);
+a{
+    text-decoration: none;
+    color: $text-color;
+}
 
 .pagelinks{
     width: 50%;
@@ -53,6 +57,9 @@ box-shadow: -1px 8px 10px -8px rgba(0,0,0,0.74);
     a:not(.more){
         &:hover{
         color:$a-color;
+        }
+        &:active{
+            color:$a-color;
         }
     }
     
@@ -81,6 +88,28 @@ color:$a-color;
 }
 }
 
+@mixin footerstyle{
+        background-color: #323437;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding:0% 5%;
+        color: white;
+        align-items: center;
+        font-family: 'Roboto',Helvetica,Arial,sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+
+        .footer{
+            width: 50%; 
+            a{
+                text-decoration: none;
+                color:white;
+                padding-right: 5%;
+            }
+        }
+}
+    
 
 body{
     margin: 0%;
@@ -111,7 +140,6 @@ body{
         }
     }
     .main-raised{
-        padding: 5%;
         color: $text-color;
         font-family:'Roboto', sans-serif;
         font-size: 18px;
@@ -125,6 +153,7 @@ body{
         right: 2%;
         
         .resources{
+            padding: 5%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -152,5 +181,8 @@ body{
             }
 
         }
+    }
+    footer{
+    @include footerstyle
     }
 }
