@@ -383,7 +383,7 @@ body .main-raised footer .footer {
   width: 50%;
 }
 
-body .main-raised footer a {
+body .main-raised footer .footer a {
   text-decoration: none;
   color: white;
   padding-right: 5%;

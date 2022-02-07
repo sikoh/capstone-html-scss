@@ -121,7 +121,6 @@ body .top-wrapper .carousel-slide h1 {
 }
 
 body .main-raised {
-  padding: 5%;
   color: #3c4858;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -136,6 +135,7 @@ body .main-raised {
 }
 
 body .main-raised .resources {
+  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,5 +183,34 @@ body .main-raised .resources .avatar a {
 
 body .main-raised .resources .avatar a:hover {
   color: palevioletred;
+}
+
+body footer {
+  background-color: #323437;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0% 5%;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto',Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+body footer .footer {
+  width: 50%;
+}
+
+body footer .footer a {
+  text-decoration: none;
+  color: white;
+  padding-right: 5%;
 }
 /*# sourceMappingURL=about.css.map */
