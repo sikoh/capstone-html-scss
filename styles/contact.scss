@@ -113,7 +113,7 @@ color:$a-color;
 
 body{
     margin: 0%;
-    background-color: #e8e8e8;
+    background-color: white;
     .top-wrapper{
         .wpadmin{
             @include topnav
@@ -122,44 +122,26 @@ body{
         .nav-menu{
             @include navmenu;
         }
-        .carousel-slide{
-        height: 370px;
+    }
+
+    .page-content-wrapper{
         display: flex;
         justify-content: center;
-        justify-items: center;
-        align-items: center;
-        color: white;
-        padding: 2%;
-        background: $background-gradient;
-        
-        h1{
-            font-size: 50px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-        }
-        }
-    }
-    .main-raised{
-        height: 700px;
-        color: $text-color;
-        font-family:'Roboto', sans-serif;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.8;
-        background-color: white;
-        position: absolute;
-        border-radius: 6px;
-        top: 360px;
-        left: 2%;
-        right: 2%;
+        gap:10%;
+        .left-side-inputs{
+            width: 30%;
+            .form-group{
+                display: flex;
+                flex-direction: column;
+            }
+        }  
 
-        .blog-section {
-            padding:5%;
-        }
-        footer{
+    }
+
+
+    footer{
             @include footerstyle
             }
-       
-    }
+         
 
 }

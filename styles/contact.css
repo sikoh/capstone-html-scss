@@ -1,6 +1,6 @@
 body {
   margin: 0%;
-  background-color: #e8e8e8;
+  background-color: white;
 }
 
 body .top-wrapper .wpadmin {
@@ -106,49 +106,32 @@ body .top-wrapper .nav-menu .pagelinks .more:hover {
   -moz-box-shadow: -5px 10px 16px -9px rgba(235, 33, 100, 0.37);
 }
 
-body .top-wrapper .carousel-slide {
-  height: 370px;
+body .page-content-wrapper {
+  padding-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  padding: 2%;
-  background: linear-gradient(45deg, #a81d84 0%, #ea396f 100%);
+  gap: 10%;
 }
 
-body .top-wrapper .carousel-slide h1 {
-  font-size: 50px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+body .page-content-wrapper .left-side-inputs {
+  width: 30%;
 }
 
-body .main-raised {
-  height: 700px;
-  color: #3c4858;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.8;
-  background-color: white;
-  position: absolute;
-  border-radius: 6px;
-  top: 360px;
-  left: 2%;
-  right: 2%;
+body .page-content-wrapper .left-side-inputs .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body .main-raised .blog-section {
-  padding: 5%;
-}
-
-body .main-raised footer {
+body footer {
   background-color: #323437;
   height: 100px;
   display: -webkit-box;
@@ -167,11 +150,11 @@ body .main-raised footer {
   font-size: 12px;
 }
 
-body .main-raised footer .footer {
+body footer .footer {
   width: 50%;
 }
 
-body .main-raised footer .footer a {
+body footer .footer a {
   text-decoration: none;
   color: white;
   padding-right: 5%;
