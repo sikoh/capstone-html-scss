@@ -291,8 +291,9 @@ body{
                         font-weight: 100;
                     }
 
-                    h4{
-                        font-size: 20px;
+                    a{
+                        text-decoration: none;
+                        color: $text-color;
                     }
 
                     p{
@@ -301,7 +302,7 @@ body{
                         font-weight: 100;
                         line-height: 1.8;
                     }
-                    a{
+                    .readmore{
                         text-decoration: none;
                         color:#23527c;
                         &:hover{

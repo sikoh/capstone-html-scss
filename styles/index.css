@@ -312,8 +312,9 @@ body .main-raised .blog-section .grid-container .blog-container1 h6 {
   font-weight: 100;
 }
 
-body .main-raised .blog-section .grid-container .blog-container1 h4 {
-  font-size: 20px;
+body .main-raised .blog-section .grid-container .blog-container1 a {
+  text-decoration: none;
+  color: #3c4858;
 }
 
 body .main-raised .blog-section .grid-container .blog-container1 p {
@@ -323,12 +324,12 @@ body .main-raised .blog-section .grid-container .blog-container1 p {
   line-height: 1.8;
 }
 
-body .main-raised .blog-section .grid-container .blog-container1 a {
+body .main-raised .blog-section .grid-container .blog-container1 .readmore {
   text-decoration: none;
   color: #23527c;
 }
 
-body .main-raised .blog-section .grid-container .blog-container1 a:hover {
+body .main-raised .blog-section .grid-container .blog-container1 .readmore:hover {
   color: red;
 }
 

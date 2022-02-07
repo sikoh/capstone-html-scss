@@ -41,6 +41,10 @@ height: 70px;
 align-items: center;
 font-family: 'Roboto',Helvetica,Arial,sans-serif;
 box-shadow: -1px 8px 10px -8px rgba(0,0,0,0.74);
+a{
+    text-decoration: none;
+    color: $text-color;
+}
 
 .pagelinks{
     width: 50%;
@@ -53,6 +57,9 @@ box-shadow: -1px 8px 10px -8px rgba(0,0,0,0.74);
     a:not(.more){
         &:hover{
         color:$a-color;
+        }
+        &:active{
+            color:$a-color;
         }
     }
     

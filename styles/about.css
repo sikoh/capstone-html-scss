@@ -63,6 +63,11 @@ body .top-wrapper .nav-menu {
           box-shadow: -1px 8px 10px -8px rgba(0, 0, 0, 0.74);
 }
 
+body .top-wrapper .nav-menu a {
+  text-decoration: none;
+  color: #3c4858;
+}
+
 body .top-wrapper .nav-menu .pagelinks {
   width: 50%;
   display: -webkit-box;
@@ -80,6 +85,10 @@ body .top-wrapper .nav-menu .pagelinks {
 }
 
 body .top-wrapper .nav-menu .pagelinks a:not(.more):hover {
+  color: #eb2164;
+}
+
+body .top-wrapper .nav-menu .pagelinks a:not(.more):active {
   color: #eb2164;
 }
 
