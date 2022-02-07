@@ -136,9 +136,25 @@ body .page-content-wrapper .left-side-inputs .form-group {
           flex-direction: column;
 }
 
-body .page-content-wrapper .left-side-inputs .form-group input[type="text"] {
+body .page-content-wrapper .left-side-inputs .form-group input[type="text"], body .page-content-wrapper .left-side-inputs .form-group textarea {
   width: 100%;
-  height: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+body .page-content-wrapper .left-side-inputs .form-group input[type=submit] {
+  background-color: #eb2164;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 body .page-content-wrapper .right-side-contacts {
@@ -182,5 +198,23 @@ body footer .footer a {
   text-decoration: none;
   color: white;
   padding-right: 5%;
+}
+
+@media (max-width: 1200px) {
+  body .page-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
