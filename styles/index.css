@@ -413,7 +413,7 @@ body .main-raised footer .footer a {
         -ms-flex-align: center;
             align-items: center;
     gap: 50px;
-    padding: 10% 5%;
+    padding: 20% 5%;
   }
   body .main-raised .blog-section {
     padding-bottom: 8%;
@@ -489,17 +489,29 @@ body .main-raised footer .footer a {
             justify-content: flex-start;
     gap: 60px;
   }
+  body .top-wrapper .carousel-slide {
+    gap: 20px;
+  }
   body .top-wrapper .carousel-slide h1 {
-    font-size: 36px;
+    font-size: 30px;
+  }
+  body .top-wrapper .carousel-slide p {
+    font-size: 14px;
   }
 }
 
 @media (max-width: 360px) {
   body .main-raised .wp-block-cover h2 {
-    font-size: 18px;
+    font-weight: 300;
   }
   body .main-raised .wp-block-cover .grid-container .block-text h2 {
     font-size: 26px;
+  }
+  body .main-raised .about-section {
+    height: 500px;
+  }
+  body .main-raised .about-section h2 {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=index.css.map */
