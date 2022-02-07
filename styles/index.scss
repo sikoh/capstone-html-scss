@@ -378,7 +378,7 @@ body{
                 flex-direction: column;
                 align-items: center;
                 gap: 50px;
-                padding: 10% 5%;
+                padding: 20% 5%;
             }
 
             .blog-section{
@@ -429,8 +429,12 @@ body{
                 }
             }
             .carousel-slide{
+                gap:20px;
                 h1{
-                    font-size: 36px;
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 14px;
                 }
             }
         }
@@ -440,8 +444,8 @@ body{
         .main-raised{
             .wp-block-cover{                    
                 h2{
-                font-size: 18px;
-            }
+                font-weight: 300;
+                 }
                 .grid-container{
                     .block-text{
                         h2{
@@ -452,10 +456,17 @@ body{
 
                 }
             }
+            .about-section{
+                height: 500px;
+                h2{
+                    font-size: 30px;
+                }
+            }
+        }   
     }
 
 }
-}
+
 
     
 
