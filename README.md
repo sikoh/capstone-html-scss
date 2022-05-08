@@ -1,3 +1,8 @@
+
+LINK TO PROJECT ON NETLIFY - https://html-scss-capstone.netlify.app/pages/index.html
+
+
+
 # capstone-html-scss
 Hestia - WordPress theme
 
