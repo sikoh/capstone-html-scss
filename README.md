@@ -9,7 +9,7 @@ Hestia - WordPress theme
 
 
 
-Replicate the Wordpress Theme linked below
+Replicate the Wordpress Theme - https://pcm.wordpress.org/themes/hestia/
 - I want everything as close to perfect as you can get it.
 - You will need to utilize nearly all of the concepts we've gone over so far.
 - Use SCSS instead of pure css
